@@ -1,4 +1,4 @@
-package main
+package text
 
 import "fmt"
 
@@ -29,4 +29,11 @@ func main()  {
 	//			    [3,6]
 	//             [3,4]
 	//arr := o,1,2,3,4,5,6,7
+
+	arr1 := append(a1, 8)
+	arr2 := append(arr1, 9)
+	arr3 := append(arr2, 10)
+	fmt.Println(arr1,arr2,arr3,arr)
+	//[100 3 4 5 6 7 8] [100 3 4 5 6 7 8 9] [100 3 4 5 6 7 8 9 10] [0 1 100 3 4 5 6 7]
+
 }
