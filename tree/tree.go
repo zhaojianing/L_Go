@@ -16,6 +16,13 @@ func (node *Noe) SetValue(value int) {
 }
 
 func (node *Noe) Traverse() {
+	node.TraverseFunc(func(n *Noe) {
+		n.Print()
+	})
+	fmt.Println()
+}
+
+func (node *Noe) TraverseFunc(f func(*Noe)) {
 	if node == nil {
 		return
 	}

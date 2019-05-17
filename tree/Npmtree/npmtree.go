@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"google_go/tree"
 )
 
@@ -30,8 +29,9 @@ func main() {
 
 	root.Traverse()
 
-	fmt.Println("\n")
-	myroot := myTreeNode{&root}
-	myroot.postOrder()
-	fmt.Println()
+
+	//fmt.Println("\n")
+	//myroot := myTreeNode{&root}
+	//myroot.postOrder()
+	//fmt.Println()
 }
